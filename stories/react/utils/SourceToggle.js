@@ -20,12 +20,12 @@ export default class SourceToggle extends React.Component {
 	}
 
 	renderFromSource() {
-		let {jsx, html} = this.props;
+		let {jsx, html, renderFromJsx} = this.props;
 		let {source} = this.state;
 		let classname = 'source-toggle-example';
 		switch (source) {
 			case sources.HTML:
-				return <div className={classname} dangerouslySetInnerHTML={{__html: html}} />;
+				return renderFromJsx ? <div className={classname}>{jsx}</div> : <div className={classname} dangerouslySetInnerHTML={{__html: html}} />;
 			case sources.React:
 			default:
 				return <div className={classname}>{jsx}</div>;
@@ -33,14 +33,14 @@ export default class SourceToggle extends React.Component {
 	}
 
 	renderMarkdown() {
-		let {jsx, html} = this.props;
+		let {jsx, html, exclude} = this.props;
 		let {source} = this.state;
 		switch (source) {
 			case sources.HTML:
 				return {__html: Prism.highlight(html, Prism.languages.html)};
 			case sources.React:
 			default:
-				return {__html: Prism.highlight(jsxToString(jsx), Prism.languages.jsx)};
+				return {__html: Prism.highlight(jsxToString({jsx, exclude}), Prism.languages.jsx)};
 		}
 	}
 

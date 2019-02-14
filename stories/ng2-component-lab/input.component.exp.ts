@@ -1,7 +1,8 @@
-/**
- * Created by ob0695 on 10/3/2017.
- */
-import {experimentOn} from '@islavi/ng2-component-lab';
+import { experimentOn } from '@islavi/ng2-component-lab';
+
+const valueChange = (value: any): void => {
+    console.log('The value was changed! >>>>', value);
+};
 
 export default experimentOn('Input')
   .group("Input",[
@@ -11,7 +12,7 @@ export default experimentOn('Input')
         title: 'Normal input',
         description: 'Normal input',
         template: `
-        <sdc-input label="Please Enter value"></sdc-input>
+        <sdc-input label="Please Enter value" name="myValue" testId="myTestId"></sdc-input>
         `
       },
       {
@@ -24,9 +25,18 @@ export default experimentOn('Input')
         `
       },
       {
+        id: 'InputTypeNumber',
+        showSource: true,
+        title: 'Input type number',
+        description: 'Input type number',
+        template: `
+        <sdc-input type='number'></sdc-input>
+        `
+      },
+      {
         id: 'Input required',
         title: 'Input required',
-        description: 'Input required',
+        description: 'Input required (this add red * to the label, but does not perform validation, use sdc-validation for validation)',
         showSource: true,
         template: `
         <sdc-input label="Please Enter Value" required="true" [maxLength]="5"></sdc-input>
@@ -42,12 +52,28 @@ export default experimentOn('Input')
         `
     },
     {
-        id: 'integerInputWithValidationError',
-        title: 'Integer input with validation error',
-        description: 'Integer input with validation error',
+        id: 'inputWithPlaceholder',
+        title: 'Input with placeholder, custom class, and tests ID',
+        description: 'Input with placeholder',
         showSource: true,
         template: `
-        <sdc-input pattern="^(([-+]?\\d+)|([-+]?0x[0-9a-fA-F]+))$"></sdc-input>
+      <sdc-input placeHolder="Text..." [classNames]="'my-custom-class another-class'" [testId]="'customTestId'"></sdc-input>
+    `
+    },
+    {
+        id: 'inputWithDebounce',
+        title: 'Input with debounce time',
+        description: `<pre>On value change event code:
+        const valueChange = (value: any): void => {
+            console.log('The value was changed! >>>>', value);
+        };
+        This event will happen 5 sec after the change
+        </pre>`,
+        showSource: true,
+        context: {
+            changeEvent: valueChange
+        },
+        template: `
+      <sdc-input [debounceTime]="5000" (valueChange)="changeEvent($event)"></sdc-input>
       `
-    }
-    ]);
+    }]);

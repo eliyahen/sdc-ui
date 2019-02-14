@@ -1,4 +1,5 @@
-import {experimentOn} from '@islavi/ng2-component-lab';
+import { experimentOn } from '@islavi/ng2-component-lab';
+
 const alert1  = window.alert;
 const console1  = console.log;
 
@@ -18,7 +19,7 @@ export default experimentOn('Tiles')
                 <sdc-tile-header>
                     <div class="blue">P</div>
                 </sdc-tile-header>
-                <sdc-tile-info>
+                <sdc-tile-content>
                     <div class="sdc-tile-content-icon blue">
                         <div class="svg-icon-wrapper"  >
                             <svg class="svg-icon __vsp" viewBox="0 0 59.5 40" id="vsp_icon">
@@ -37,12 +38,12 @@ export default experimentOn('Tiles')
                         </div>
                     </div>
                     <div class="sdc-tile-content-info">
-                        <span class="sdc-tile-info-line title">Router</span>
-                        <div class="sdc-tile-info-line supertitle">test</div>
+                        <div class="sdc-tile-info-line title">Router</div>
+                        <div class="sdc-tile-info-line subtitle">test</div>
                     </div>
-                </sdc-tile-info>
+                </sdc-tile-content>
                 <sdc-tile-footer>
-                    <span class="sdc-tile-footer-cell"> Footer </span>
+                    <span class="sdc-tile-footer-cell">Footer</span>
                 </sdc-tile-footer>
             </sdc-tile>
             `
@@ -57,7 +58,7 @@ export default experimentOn('Tiles')
                 <sdc-tile-header>
                     <div class="purple">P</div>
                 </sdc-tile-header>
-                <sdc-tile-info>
+                <sdc-tile-content>
                     <div class="sdc-tile-content-icon purple">
                         <div class="svg-icon-wrapper"  >
                             <svg class="svg-icon __vsp" viewBox="0 0 59.5 40" id="vsp_icon">
@@ -77,9 +78,9 @@ export default experimentOn('Tiles')
                     </div>
                     <div class="sdc-tile-content-info">
                         <span class="sdc-tile-info-line title">Router</span>
-                        <div class="sdc-tile-info-line supertitle">test</div>
+                        <div class="sdc-tile-info-line subtitle">test</div>
                     </div>
-                </sdc-tile-info>
+                </sdc-tile-content>
                 <sdc-tile-footer>
                     <span class="sdc-tile-footer-cell"> Footer </span>
                 </sdc-tile-footer>
@@ -96,7 +97,7 @@ export default experimentOn('Tiles')
                 <sdc-tile-header>
                     <div class="purple">P</div>
                 </sdc-tile-header>
-                <sdc-tile-info>
+                <sdc-tile-content>
                     <div class="sdc-tile-content-icon purple">
                         <div class="svg-icon-wrapper"  >
                             <svg class="svg-icon __vsp" viewBox="0 0 59.5 40" id="vsp_icon">
@@ -116,9 +117,9 @@ export default experimentOn('Tiles')
                     </div>
                     <div class="sdc-tile-content-info">
                         <span class="sdc-tile-info-line title">Router</span>
-                        <div class="sdc-tile-info-line supertitle">test</div>
+                        <div class="sdc-tile-info-line subtitle">test</div>
                     </div>
-                </sdc-tile-info>
+                </sdc-tile-content>
             </sdc-tile>
         `
     },
@@ -129,7 +130,7 @@ export default experimentOn('Tiles')
         showSource: true,
         template: `
             <sdc-tile>
-                <sdc-tile-info>
+                <sdc-tile-content>
                     <div class="sdc-tile-content-icon purple">
                         <div class="svg-icon-wrapper"  >
                             <svg class="svg-icon __vsp" viewBox="0 0 59.5 40" id="vsp_icon">
@@ -149,9 +150,9 @@ export default experimentOn('Tiles')
                     </div>
                     <div class="sdc-tile-content-info">
                         <span class="sdc-tile-info-line title">Router</span>
-                        <div class="sdc-tile-info-line supertitle">test</div>
+                        <div class="sdc-tile-info-line subtitle">test</div>
                     </div>
-                </sdc-tile-info>
+                </sdc-tile-content>
                 <sdc-tile-footer>
                     <span class="sdc-tile-footer-cell"> Footer </span>
                 </sdc-tile-footer>
@@ -165,7 +166,7 @@ export default experimentOn('Tiles')
         showSource: true,
         template: `
             <sdc-tile>
-                <sdc-tile-info>
+                <sdc-tile-content>
                     <div class="sdc-tile-content-icon purple">
                         <div class="svg-icon-wrapper"  >
                             <svg class="svg-icon __vsp" viewBox="0 0 59.5 40" id="vsp_icon">
@@ -185,9 +186,9 @@ export default experimentOn('Tiles')
                     </div>
                     <div class="sdc-tile-content-info">
                         <span class="sdc-tile-info-line title">Router</span>
-                        <div class="sdc-tile-info-line supertitle">test</div>
+                        <div class="sdc-tile-info-line subtitle">test</div>
                     </div>
-                </sdc-tile-info>
+                </sdc-tile-content>
             </sdc-tile>`
     }
     ]);

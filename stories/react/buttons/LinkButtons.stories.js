@@ -3,58 +3,47 @@ import Examples from '../utils/Examples.js';
 
 import ReactButton from '../../../src/react/Button.js';
 
-import HTMLButtonLinkPrimary from '../../../components/button/button-link-primary.html';
-import HTMLButtonLinkPrimaryDisabled from '../../../components/button/button-link-primary-disabled.html';
-import HTMLButtonLinkPrimaryWithIcon from '../../../components/button/button-link-primary-with-icon.html';
-import HTMLButtonLinkPrimaryWithIconDisabled from '../../../components/button/button-link-primary-with-icon-disabled.html';
-
-import HTMLButtonLinkSecondary from '../../../components/button/button-link-secondary.html';
-import HTMLButtonLinkSecondaryDisabled from '../../../components/button/button-link-secondary-disabled.html';
-import HTMLButtonLinkSecondaryWithIcon from '../../../components/button/button-link-secondary-with-icon.html';
-import HTMLButtonLinkSecondaryWithIconDisabled from '../../../components/button/button-link-secondary-with-icon-disabled.html';
-
+import LinkButton from '../../../components/button/button-link.html';
+import LinkButtonDisabled from '../../../components/button/button-link-disabled.html';
+import ExtraSmall from '../../../components/button/button-link-extra-small.html';
+import Small from '../../../components/button/button-link-small.html';
+import Medium from '../../../components/button/button-link-medium.html';
+import Large from '../../../components/button/button-link-large.html';
+import Auto from '../../../components/button/button-link-auto.html';
 
 let examples = {
-	'Primary Link': {
-		jsx: <ReactButton btnType='link' color='primary' onClick={() => {}}>Click Me</ReactButton>,
-		html: HTMLButtonLinkPrimary
+	'Link Default': {
+		jsx: <ReactButton btnType='link' onClick={() => {}}>Click Me</ReactButton>,
+		html: LinkButton
 	},
-	'Primary Link Disabled': {
-		jsx: <ReactButton btnType='link' color='primary' onClick={() => {}} disabled>Click Me</ReactButton>,
-		html: HTMLButtonLinkPrimaryDisabled,
-		displayTitle: false
+	'Link Disabled': {
+		jsx: <ReactButton btnType='link' onClick={() => {}} disabled>Click Me</ReactButton>,
+		html: LinkButtonDisabled,
 	},
-	'Primary Link With Icon': {
-		jsx: <ReactButton btnType='link' color='primary' iconName='plus' onClick={() => {}}>Click Me</ReactButton>,
-		html: HTMLButtonLinkPrimaryWithIcon
+	'Extra Small': {
+		jsx: <ReactButton btnType='link' size='x-small' onClick={() => {}}>Click Me</ReactButton>,
+		html: ExtraSmall
 	},
-	'Primary Link With Icon Disabled': {
-		jsx: <ReactButton btnType='link' color='primary' iconName='plus' onClick={() => {}} disabled>Click Me</ReactButton>,
-		html: HTMLButtonLinkPrimaryWithIconDisabled,
-		displayTitle: false
+	'Small': {
+		jsx: <ReactButton btnType='link' size='small' onClick={() => {}}>Click Me</ReactButton>,
+		html: Small,
 	},
-	'Secondary Link': {
-		jsx: <ReactButton btnType='link' color='secondary' onClick={() => {}}>Click Me</ReactButton>,
-		html: HTMLButtonLinkSecondary
+	'Medium': {
+		jsx: <ReactButton btnType='link' size='medium' onClick={() => {}}>Click Me</ReactButton>,
+		html: Medium
 	},
-	'Secondary Link Disabled': {
-		jsx: <ReactButton btnType='link' color='secondary' onClick={() => {}} disabled>Click Me</ReactButton>,
-		html: HTMLButtonLinkSecondaryDisabled,
-		displayTitle: false
+	'Large': {
+		jsx: <ReactButton btnType='link' size='large' onClick={() => {}}>Click Me</ReactButton>,
+		html: Large,
 	},
-	'Secondary Link With Icon': {
-		jsx: <ReactButton btnType='link' color='secondary' iconName='plus' onClick={() => {}}>Click Me</ReactButton>,
-		html: HTMLButtonLinkSecondaryWithIcon
-	},
-	'Secondary Link With Icon Disabled': {
-		jsx: <ReactButton btnType='link' color='secondary' iconName='plus' onClick={() => {}} disabled>Click Me</ReactButton>,
-		html: HTMLButtonLinkSecondaryWithIconDisabled,
-		displayTitle: false
+	'Auto Sizing': {
+		jsx: <ReactButton btnType='link' size='default' onClick={() => {}}>Click Me</ReactButton>,
+		html: Auto,
 	}
 };
 
-const LinkButtons = () => (
-		<Examples examples={examples} />
+const DefaultButtons = () => (
+	<Examples examples={examples} />
 );
 
-export default LinkButtons;
+export default DefaultButtons;

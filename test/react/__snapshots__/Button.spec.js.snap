@@ -2,8 +2,9 @@
 
 exports[`Button Button - Default - Gray 1`] = `
 <button
-  className="sdc-button sdc-button-default sdc-button__gray  "
-  disabled={undefined}
+  className="sdc-button sdc-button__primary   "
+  color="gray"
+  disabled={false}
   onClick={undefined}
 >
   Click Me
@@ -12,8 +13,9 @@ exports[`Button Button - Default - Gray 1`] = `
 
 exports[`Button Button - Default - Negative 1`] = `
 <button
-  className="sdc-button sdc-button-default sdc-button__negative  "
-  disabled={undefined}
+  className="sdc-button sdc-button__primary   "
+  color="negative"
+  disabled={false}
   onClick={undefined}
 >
   Click Me
@@ -22,8 +24,9 @@ exports[`Button Button - Default - Negative 1`] = `
 
 exports[`Button Button - Default - Positive 1`] = `
 <button
-  className="sdc-button sdc-button-default sdc-button__positive  "
-  disabled={undefined}
+  className="sdc-button sdc-button__primary   "
+  color="positive"
+  disabled={false}
   onClick={undefined}
 >
   Click Me
@@ -32,7 +35,7 @@ exports[`Button Button - Default - Positive 1`] = `
 
 exports[`Button Button - Default - Primary - Disabled 1`] = `
 <button
-  className="sdc-button sdc-button-default sdc-button__primary  "
+  className="sdc-button sdc-button__primary   "
   disabled={true}
   onClick={undefined}
 >
@@ -42,8 +45,8 @@ exports[`Button Button - Default - Primary - Disabled 1`] = `
 
 exports[`Button Button - Default - Primary 1`] = `
 <button
-  className="sdc-button sdc-button-default sdc-button__primary  "
-  disabled={undefined}
+  className="sdc-button sdc-button__primary   "
+  disabled={false}
   onClick={undefined}
 >
   Click Me
@@ -52,8 +55,9 @@ exports[`Button Button - Default - Primary 1`] = `
 
 exports[`Button Button - Default - Warning 1`] = `
 <button
-  className="sdc-button sdc-button-default sdc-button__warning  "
-  disabled={undefined}
+  className="sdc-button sdc-button__primary   "
+  color="warning"
+  disabled={false}
   onClick={undefined}
 >
   Click Me
@@ -62,8 +66,9 @@ exports[`Button Button - Default - Warning 1`] = `
 
 exports[`Button Button - Default - White 1`] = `
 <button
-  className="sdc-button sdc-button-default sdc-button__white  "
-  disabled={undefined}
+  className="sdc-button sdc-button__primary   "
+  color="white"
+  disabled={false}
   onClick={undefined}
 >
   Click Me
@@ -72,7 +77,8 @@ exports[`Button Button - Default - White 1`] = `
 
 exports[`Button Button - Link - Primary - Disabled 1`] = `
 <button
-  className="sdc-button sdc-button-link sdc-button__primary  "
+  className="sdc-button sdc-button__link   "
+  color="primary"
   disabled={true}
   onClick={undefined}
 >
@@ -82,8 +88,9 @@ exports[`Button Button - Link - Primary - Disabled 1`] = `
 
 exports[`Button Button - Link - Primary - With Icon 1`] = `
 <button
-  className="sdc-button sdc-button-link sdc-button__primary  sdc-button__with-icon"
-  disabled={undefined}
+  className="sdc-button sdc-button__link   plus"
+  color="primary"
+  disabled={false}
   onClick={undefined}
 >
   <div
@@ -103,8 +110,9 @@ exports[`Button Button - Link - Primary - With Icon 1`] = `
 
 exports[`Button Button - Link - Primary 1`] = `
 <button
-  className="sdc-button sdc-button-link sdc-button__primary  "
-  disabled={undefined}
+  className="sdc-button sdc-button__link   "
+  color="primary"
+  disabled={false}
   onClick={undefined}
 >
   Click Me
@@ -113,8 +121,9 @@ exports[`Button Button - Link - Primary 1`] = `
 
 exports[`Button Button - Outline - Gray 1`] = `
 <button
-  className="sdc-button sdc-button-outline sdc-button__gray  "
-  disabled={undefined}
+  className="sdc-button sdc-button__outline   "
+  color="gray"
+  disabled={false}
   onClick={undefined}
 >
   Click Me
@@ -123,8 +132,9 @@ exports[`Button Button - Outline - Gray 1`] = `
 
 exports[`Button Button - Outline - Negative 1`] = `
 <button
-  className="sdc-button sdc-button-outline sdc-button__negative  "
-  disabled={undefined}
+  className="sdc-button sdc-button__outline   "
+  color="negative"
+  disabled={false}
   onClick={undefined}
 >
   Click Me
@@ -133,8 +143,9 @@ exports[`Button Button - Outline - Negative 1`] = `
 
 exports[`Button Button - Outline - Positive 1`] = `
 <button
-  className="sdc-button sdc-button-outline sdc-button__positive  "
-  disabled={undefined}
+  className="sdc-button sdc-button__outline   "
+  color="positive"
+  disabled={false}
   onClick={undefined}
 >
   Click Me
@@ -143,8 +154,8 @@ exports[`Button Button - Outline - Positive 1`] = `
 
 exports[`Button Button - Outline - Primary 1`] = `
 <button
-  className="sdc-button sdc-button-outline sdc-button__primary  "
-  disabled={undefined}
+  className="sdc-button sdc-button__outline   "
+  disabled={false}
   onClick={undefined}
 >
   Click Me
